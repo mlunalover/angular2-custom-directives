@@ -4,11 +4,11 @@ import {HighlightDirective} from "./highlight.directive";
 @Component({
     selector: 'my-attribute-directives',
     template: `
-        <div myHightlight>
+        <div [myHighlight]="'red'">
             Highlight me
         </div>
         <br>
-        <div myHightlight="">
+        <div [myHighlight]="'blue'">
             Another Highlight
         </div>
     `,
